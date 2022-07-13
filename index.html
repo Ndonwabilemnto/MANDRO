@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dane Beats Entertainment</title>
+
+    
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+	<link href="Content/Transition.css" rel="stylesheet" />
+	<link href="Content/nav bar.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	<!--<link href="Content/Links.css" rel="stylesheet" />-->
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+ <!-- <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} </script>-->
+  <style>
+  
+  
+ .navbar {
+  overflow: hidden;
+  background-color: #333;  
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: red;
+  color: black;
+}
+
+.navbar a.active {
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top:0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+.mynavbar {
+  overflow: hidden;
+  background-color: #333;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.mynavbar a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+
+
+  </style>
+  </head>
+  
+  
+  <body style="background-color:Black;">
+	<!--<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#news">News</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>-->
+
+<div class="Container">
+<div class="navbar" id="myNavbar">
+  <a href="index.html"  class="active" style="font-family:'Century Gothic'; font-size:large; color:grey;">Home</a>
+  <a href="#About" style="font-family:'Century Gothic'; font-size:large; color:grey;">About</a>
+  <a href="#Services" style="font-family:'Century Gothic'; font-size:large; color:grey;">Services & Products</a>
+  <a href="#Contact" style="font-family:'Century Gothic'; font-size:large; color:grey;">Contact</a>
+  <a href="Blog.html" style="font-family:'Century Gothic'; font-size:large; color:grey;">Blog</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</div>
+
+
+
+
+	<!--<div class="Container" id="Text-Container">
+		<div class="row">
+			<div class="col-md-12">
+				<center><img src="Images/Hero Image-Edit.jpg" class="img-responsive img-rounded"  width=85% height=75%  /></center>
+			
+			</div>
+		</div>
+	</div>-->
+	
+
+		
+	<div class="Container" id="Text-Container">
+		
+		 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+    <!-- Wrapper for slides -->
+			<div class="carousel-inner">
+					<div class="item active">
+							<center><img src="Images/Hero Image-Edit.jpg" class="img-responsive img-rounded"  width=85% height=75%  /></center>
+					</div>
+
+				<div class="item">
+						<center><img src="Images/Hero Image-Edit-Vanilla.jpg" class="img-responsive img-rounded"  width=85% height=75%  /></center>
+				</div>
+    
+				<div class="item">
+					<center><img src="Images/Hero Image-Edit-Mercury.jpg" class="img-responsive img-rounded"  width=85% height=75%  /></center>
+				</div>
+			</div>
+
+    <!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+		</div>
+		
+			
+			
+	</div>
+		
+		<br/>
+		<br/>
+		
+		
+		 <div id="Text-Container" class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h1 style="font-style:italic; color:grey;text-align:right"> <b><i> The Genesis</i></b></h1>
+							
+						<br />
+						<br />
+						
+        
+						<p style="font-family:'arial'; font-size:x-large;">
+						<h4 style="color:grey;text-align:right; font-family:'Arial'" > <i>DaneBeats Entertainment</i> is a company established by Dane Saunders and his Business partner Akhona Mqoboli in the pursuit of creativity, individuality and quality 
+																					   in the entertainment industry.</h4> 
+						<br /> 
+					</div>
+         
+
+					<div class="col-md-2" >
+						<h1 style="font-style:italic; color:grey;text-align:left"> <b><i>The Music</i></b></h1>
+						<br />
+						<br />
+
+
+						<p style="text-align:Left; font-family:'bookman old'; font-size:x-large;">
+						<h4 style="color:grey;text-align:left; font-family:'Arial'" > Danebeats has been involved in numerous musical projects, including the likes of Chu Da Chum, Maluti Langa, Sim Gee, Tyson Sean, Trillae Chad etc. </h4> 
+						<br />
+           
+					</div>
+			
+					<div class="col-md-2" >
+						<h1 style="font-style:italic; color:grey;text-align:right"><b><i> The Style</i></b></h1>
+						<br />
+						<br />
+						<br/>
+
+
+						<p style="text-align:Left; font-family:'bookman old'; font-size:x-large;">
+						<h4 style="color:grey;text-align:right; font-family:'Arial'" > Music production from Danebeats Entertainment takes a position of "Urban Kasi Rap" with a touch of classic rap & Hip-hop, Dane has the vision of campturing 
+																										the old school kwaito-style while blending it with urban rap & culture, look out for our production<h4> 
+						<br />
+           
+					</div>
+
+        
+					<div class="col-md-4">
+						<h1 style="font-style:italic; color:grey; text-align:left"><b><i> The Dream</i></b> </h1>
+						<br />
+						<br />
+						
+						<p style="text-align:Left; font-family:'Courier New'; font-size:x-large;">
+						<h4 style="color:grey;text-align:right; font-family:'Arial'" > <i>DaneBeats entertainment</i> aims at being a role player and paving it's own lane but also playing an active role in creating a society that serves justice and deals with the injustices of the system, we are a humanitarian company.<h4> 
+						<br/>
+						</p>
+					</div>
+			</div>
+		</div>
+		
+		<br/>
+		<br/>
+		
+		<div id="Text-Container" class="container">
+				<div class="row">
+					<div class="col-md-12">
+					<center><img src="Images/dane3.jpg" class="img-responsive img-rounded"  width=85% height=65%  /></center>
+					
+					</div>
+					
+           
+				</div>
+		</div>
+			
+					
+		
+		<div class="Container" id="Text-Container">
+				<div class="row">
+					<div class="col-md-6-col-md-offset-6">
+						<h1 style="color:pink; text-align:center" id="About"> <b><i>About Dane Beats Entertainment</i></b> </h1>
+							<div class="col-md-12">
+			
+								<center><img src="Images/Style.jpg" class="img-responsive img-rounded"  width=40%   /></center>
+		
+							</div>
+				
+					</div>
+		
+				</div>
+		</div>
+		
+		<div class="Container" id="Text-Container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2"
+						<h4 style="color:grey; text-align:left"> <i>Danebeats Entertainment</i> is a company and recording label looking to provide a unique sound for people to relate to and enjoy. 
+																 The record label focuses on the true artistry of music and bringing out the best in each artist and expanding the label into different businesses. <br/>
+																 <i>Dane beats </i> is a record label focussed on bringing out the true artistry of each artist and the uniqueness of sound to the world.
+																</h4>
+				
+					</div>
+		
+				</div>
+		</div>
+		
+		
+		<br/>
+		<br/>
+		
+		
+		
+		<br/>
+		<br/>
+		
+		<div class="container">
+		
+				<div class="col-md-6">
+			 
+				<center><img src="Images/Body-Img.jpg" class="img-responsive img-rounded"  width=70%  /></center>
+		 
+				</div>
+		 
+				<div class="col-md-6">
+				
+				<h1 style="font-family:'Arial Black'; text-align:center; "> <i>The Creator</i></h1> <br/>
+				
+				<p style="font-family:'arial'; text-align:left;font-size: 18px;color:grey; ">  Dane Saunders, an ambitious, passionate Sound inventer and Sound Designer with vast and outstreched years of experience, had a vision of creating a sound and style that people could relate and jam to, with the establishment of his true skills, he took it upon himself to create a legacy for himself and the one's around him, hence the birth of <i>DaneBeats Entertainment</i> a ground-breaking recording studio for the true artistic artists in South Africa.  </p>
+		 
+				</div>
+		</div>
+				
+				<br/>
+				<br/>
+				<br/>
+				
+		<div class="Container" id="Text-Container">
+				<div class="row">
+					<div class="col-md-6-col-md-offset-6">
+						<h1 style="color:grey; text-align:center" id="Services"> <b><i>Our Products & Services Offerings</i></b> </h1>
+							<div class="col-md-12">
+			
+								<center><img src="Images/Style.jpg" class="img-responsive img-rounded"  width=40%   /></center>
+		
+							</div>
+				
+					</div>
+		
+				</div>
+		</div>
+		<div class="Container" id="Text-Container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2"
+						<h4 style="color:grey; text-align:left"> Although we are a company that is fundamentaly focussed on the <i>Entertainment sphere</i> the vision and long term aspirations of the Co. is to provide a diverse range of services and products through the company. <br/>
+						
+															Our services and products include but are not limited to:
+						</h4>
+						<br/>
+																
+						<p style="text-align:left; font-family:'Arial';  color: black; font-size: 18px; ">
+					
+						<ul class="a" style="text-align:left; font-family:'Arial';  color: grey; font-size: 18px">
+							<li>Sound Production & Engineering</li>
+							<li>Beat Making</li>
+							<li>Clothing & Merchandising</li>
+							<li>Music Recording & Mastering</li>
+							<li>Painting</li>
+							<li>Stone Carving</li>
+							<li>Graphic Designing</li>
+							<li>Visuals</li>
+							
+						</ul>
+					</p> 
+				
+					</div>
+		
+				</div>
+		</div>
+		
+				<br/>
+				<br/>
+				<br/>
+		
+			<div id="Text-Container" class="container">
+				<div class="row">
+					<div class="col-md-12">
+					<!---<center><img src="Images/Icons.jpg" class="img-responsive img-rounded"  width=85% height=75%  /></center>-->
+					
+					<center><img src="images/pic1.PNG"  style="border-radius: 50%;" class="img-responsive img-rounded"  width=65% height=60%  /></center>
+					</div>
+					
+           
+				</div>
+			</div>
+		
+			
+			<br/>
+				<br/>
+				<br/>
+			
+				
+			
+			<div class="Container" id="Text-Container">
+				<div class="row">
+					<div class="col-md-6-col-md-offset-6">
+						<h1 style="color:grey; text-align:center" id="Contact"> <b><i>Stay in Touch with US!</i></b> </h1>
+							<div class="col-md-12">
+			
+								<center><img src="Images/Style.jpg" class="img-responsive img-rounded"  width=40%   /></center>
+		
+							</div>
+				
+					</div>
+		
+				</div>
+			</div>
+		
+			<div class="container" id="Text-Container">
+				<div class="row">
+					<div class="col-md-6">
+					
+					
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849.3870840055483!2d28.74911442919873!3d-31.61883375680945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e5fd72402b208db%3A0x59a169bef5f02075!2s88%20Mapuzi%20Crecsent%2C%20Southridge%2C%20Mthatha!5e0!3m2!1sen!2sza!4v1580111470235!5m2!1sen!2sza"
+					width=100% height="400" 
+					frameborder="0" 
+					style="border:0;" 
+					allowfullscreen="">
+					</iframe>
+					</p>
+					</div>
+					
+					<div class="col-md-6">
+					<h2 style="color:grey;"><i><b>Contact Info</b><i></h2> <br/>
+					
+					 <span class="glyphicon glyphicon-earphone"style="color:grey;"> <h4 style="font-family:arial;"> <b><i>067 953 1767 </i></b> </h4> </span> <br/>
+																													 <br/>
+																													 
+					 <span class="glyphicon glyphicon-envelope"style="color:grey;"> <h4 style="font-family:arial;"> <b><i>danesaunders2@gmail.com</i></b> </h4> </span> <br/>
+																														   <br/>
+																												
+					<span class="glyphicon glyphicon-map-marker"style="color:grey;"> <h4 style="font-family:arial;"> 12 Leon Court </h4> 
+																					  <h4 style="font-family:arial;"> Kingsmead Avenue </h4> 
+																					  <h4 style="font-family:arial;"> Belville, Cape Town  </h4> 
+																					 
+					
+					
+					
+					</span> 
+																													    
+					
+					</div>
+				</div>
+					
+					
+			</div>
+			
+				
+			
+		
+		
+		<div class="row" style="background-color:white; padding-bottom:0px" id="Text-Container"> 
+			<div class="col-md-3">
+					<h1 style= "color:charcoal;text-align:left"> Pages</h1>
+					</br>
+					
+					<a href="index.html" style="color:black; text-decoration:none;"> <h4 style="text-align:left"> Home</h4></a>
+					<a href="#About" style="color:black; text-decoration:none;" > <h4 style="text-align:left"> About</h4> </a>
+					<a href="#Services" style="color:black; text-decoration:none;"><h4 style="text-align:left"> Services & Products</h4></a> 
+					<a href="#Contact" style="color:black; text-decoration:none;"><h4 style="text-align:left"> Contact</h4> </a>
+					<a href="Blog.html" style="color:black; text-decoration:none;"> <h4 style="text-align:left"> Blog</h4> </a>
+													
+			</div>
+			
+			<div class="col-md-3">
+			
+					<h1 style="color:charcoal;text-align:left"> Products</h1>		
+					</br>
+					
+					<h4 style="font-style:italic; color:charcoal;text-align:left"> Sound Production & Engineering </h4> 
+					<h4 style="font-style:italic; color:charcoal;text-align:left"> Beat Making </h4> 
+					<h4 style="font-style:italic; color:charcoal;text-align:left"> Clothing & Merchandising </h4> 
+					<h4 style="font-style:italic; color:charcoal;text-align:left"> Music Recording & Mastering </h4> 
+					<h4 style="font-style:italic; color:charcoal;text-align:left"> Painting </h4> 
+					<h4 style="font-style:italic; color:charcoal;text-align:left"> Stone Carving </h4> 
+					<h4 style="font-style:italic; color:charcoal;text-align:left"> Graphic Designing </h4> 
+					<h4 style="font-style:italic; color:charcoal;text-align:left"> Visuals </h4> 
+																				  				
+			</div>
+			
+			<div class="col-md-3">
+				<h1 style="color:charcoal;text-align:left"> Location</h1>
+			
+				</br>
+					
+					<h4 style="font-style:none; color:charcoal;text-align:left"> 12 Leon Court</h4>
+					<h4 style="font-style:none; color:charcoal;text-align:left"> Kingsmead Avenue </h4>
+					<h4 style="font-style:none; color:charcoal;text-align:left"> Belville, Cape Town </h4> 
+					
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849.3870840055483!2d28.74911442919873!3d-31.61883375680945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e5fd72402b208db%3A0x59a169bef5f02075!2s88%20Mapuzi%20Crecsent%2C%20Southridge%2C%20Mthatha!5e0!3m2!1sen!2sza!4v1580111470235!5m2!1sen!2sza"
+					width=100% height="150" 
+					frameborder="0" 
+					style="border:0;" 
+					allowfullscreen="">
+					</iframe>
+					</p>
+					
+			</div>
+			
+			<div class="col-md-3" style="background-color:Charcoal;">
+				<h1 style="color:charcoal;text-align:left"> Stay in Touch</h1>
+				<br/>
+					<a href="Blog.html" style="color:black; text-decoration:none;"> <h4 style="text-align:left"> Latest news/ Feeds</h4></a>
+			</div>
+
+			
+			<br/>
+			
+			
+			<div class="container">
+			
+			</div>
+			
+			<br/>
+			
+			
+			<div class="container">
+			
+				<div class="col-md-12">
+						<h5 style="font-family:'century gothic'; color:grey; text-align:center; padding:30px"> <b> &copy All rights reserved: DaneBeats Entertainment 2020 ||<br/>
+																									Site designed & developed by: ZA Software Development House | ICT <br/>
+																								 </b>
+							
+						 </h5>
+						
+					</div>
+					
+			</div>
+			
+			
+			<div class="mynavbar">
+  
+  <a  href="index.html"  style="font-family:'Book Antiqua'; font-size:x-large; color:red; text-align:center; font-style:italic"><b>Dane Beats Entertainment</b></a>
+  
+  
+</div>
+
+			
+			<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+		
+		
+		
+		
+</body>
+  
+  </html>
+  
